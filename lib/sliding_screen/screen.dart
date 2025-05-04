@@ -2,9 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:note_app/listview/slide_listview.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
-class Screen extends StatelessWidget {
+class Screen extends StatefulWidget {
   const Screen({super.key});
 
+  @override
+  State<Screen> createState() => _ScreenState();
+}
+
+class _ScreenState extends State<Screen> {
   @override
   Widget build(BuildContext context) {
     final PageController _controller = PageController();

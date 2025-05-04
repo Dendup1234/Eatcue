@@ -8,9 +8,6 @@ class Verification extends StatefulWidget {
 }
 
 class _VerificationState extends State<Verification> {
-  int? code_number;
-  bool _validateCode = false;
-
   @override
   Widget build(BuildContext context) {
     //final String phoneNumber =
@@ -60,19 +57,6 @@ class _VerificationState extends State<Verification> {
               ),
             ),
             SizedBox(height: 40),
-            TextField(
-              keyboardType: TextInputType.number,
-              decoration: InputDecoration(
-                labelText: '',
-                enabledBorder: UnderlineInputBorder(
-                  borderSide: BorderSide(
-                    color: const Color.fromARGB(255, 23, 231, 30),
-                  ),
-                ),
-              ),
-            ),
-
-            SizedBox(height: 60.0),
           ],
         ),
       ),
