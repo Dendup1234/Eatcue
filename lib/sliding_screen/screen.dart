@@ -73,7 +73,7 @@ class _ScreenState extends State<Screen> {
               width: double.infinity,
               child: ElevatedButton(
                 onPressed: () {
-                  Navigator.pushNamed(context, '/home');
+                  Navigator.pushNamed(context, '/start');
                 },
                 child: Text(
                   "Get Started",
